@@ -816,12 +816,12 @@ body { overflow-wrap: anywhere; }
         <button class="btn-control btn-size" id="btn-size-large" onclick="setTextSize('large')" title="Ennukuta ennene" aria-label="Ennukuta ennene">A+</button>
         <button class="btn-control btn-size" id="btn-size-xlarge" onclick="setTextSize('xlarge')" title="Ennukuta ennene ennyo" aria-label="Ennukuta ennene ennyo">A++</button>
         <button class="btn-control btn-theme" id="btn-theme-toggle" onclick="toggleTheme()" title="Kyusa ku Nkola y'Ekizikiza" aria-label="Kyusa ku Nkola y'Ekizikiza">
-          <span id="theme-icon">🌙</span> <span id="theme-label">Ekizikiza</span>
+          <span id="theme-icon">🌙</span> <span id="theme-label">Ekitangaala</span>
         </button>
       </div>
       <div class="util-group">
         <button class="btn-control btn-print" onclick="window.print()" title="Kuba olupapula luno olw'okwegezaamu mu kyapa">
-          🖨️ Kuba Ekitabo Ekimpi mu Kyapa
+          🖨️ Fulumya akatabo akamangu
         </button>
       </div>
     </div>
@@ -829,7 +829,7 @@ body { overflow-wrap: anywhere; }
     <!-- Omutwe -->
     <header>
       <h1>Okuyiga Okukozesa JW Library</h1>
-      <p>Okuyiga okw'essaawa emu okw'omugaso okukuyamba okukozesa apu eno n'okunyumirwa okusoma Bayibuli, okwetegekera enkuŋŋaana z'Ekikristaayo, n'okukozesa ebitabo ebyesigamiziddwa ku Bayibuli.</p>
+      <p>Okuyiga okw'essaawa emu okw'omugaso okukuyamba okukozesa apu eno n'okunyumirwa okusoma Bayibuli, okutegeka enkuŋŋaana z'ekikristaayo, n'okukozesa ebitabo ebyesigamiziddwa ku Bayibuli.</p>
     </header>
 
     <!-- Draft notice -->
@@ -840,23 +840,23 @@ body { overflow-wrap: anywhere; }
 
     <!-- Okulonda Essimu, Tabbuleeti, oba Kompyuta -->
     <section class="device-card">
-      <h2><span>📱</span> Londa Essimu, Tabbuleeti, oba Kompyuta gy'Okozesa</h2>
-      <p style="font-size: 1rem; color: var(--text-muted);">Londa essimu, tabbuleeti, oba kompyuta gy'okozesa, ebiragiro n'ebifo obupeesa we buli bikwatagane ne ssirini yo:</p>
+      <h2><span>📱</span> Londa ekika ky'Essimu, Tabbuleeti, oba Kompyuta gy'Okozesa</h2>
+      <p style="font-size: 1rem; color: var(--text-muted);">Londa ko ku biragiro ebikwatagana ne biri ku sikuliini yo:</p>
 
       <div class="device-tabs">
         <button class="device-tab active" id="tab-apple" onclick="selectDevice('apple')">
-          🍎 Apple (iPhone / iPad)
+          🍎 Apple (iPhone oba iPad)
         </button>
         <button class="device-tab" id="tab-android" onclick="selectDevice('android')">
-          🤖 Android (Essimu / Tabbuleeti)
+          🤖 Android (Essimu oba Tabbuleeti)
         </button>
         <button class="device-tab" id="tab-windows" onclick="selectDevice('windows')">
-          💻 Kompyuta ya Windows / Mac
+          💻 Kompyuta ya Windows oba Mac
         </button>
       </div>
 
       <div class="device-note" id="device-note-text">
-        <strong>Ky'Olonze:</strong> Ku iPhone ne iPad za Apple, olukalala olukulu olw'okutambuliramu luli wansi ku ssirini (Bayibuli, Ebitabo, Enkuŋŋaana, Okwesomesa).
+        <strong>Ky'olonze:</strong> Ku iPhone ne iPad za Apple, olukalala olukulu olw'okutambulirako luli wansi ku ssikuliini (Bayibuli, Ebitabo, Enkuŋŋaana, Okwesomesa).
       </div>
     </section>
 
@@ -870,23 +870,23 @@ body { overflow-wrap: anywhere; }
         </div>
         <div class="check-item">
           <span class="check-badge">✓</span>
-          <span><strong>Okusirisa mu Kabenje:</strong> Eddoboozi bwe livaayo nga terisuubiddwa, <span id="check-silence-desc">nyiga era onyweze <strong>eppeesa erikendeeza eddoboozi</strong> eriri ku mabbali g'essimu/tabbuleeti yo, nyiga <strong>eppeesa erisirisa (🔇)</strong> ku kiwandiikiro kyo, oba nyiga <strong>Yimiriza (⏸️)</strong></span>.</span>
+          <span><strong>Okusirisa amaloboozi:</strong> Ssinga eddoboozi livaayo nga terisuubiddwa, <span id="check-silence-desc">nyiga era onyweze <strong>eppeesa erikendeeza eddoboozi</strong> eriri ku mabbali g'essimu/tabbuleeti yo, nyiga <strong>eppeesa erisirisa (🔇)</strong> ku kibodi yo, oba nyiga <strong>Yimiriza (⏸️)</strong></span>.</span>
         </div>
         <div class="check-item">
           <span class="check-badge">✓</span>
-          <span><strong>Bbaatule:</strong> Jjira essimu yo, tabbuleeti, oba kompyuta yo nga bbaatule yaayo ejjudde (oba leeta waya yo ecaajinga).</span>
+          <span><strong>Bbaatule:</strong> Jangu n'essimu, tabbuleeti, oba kompyuta yo nga bbaatule yaayo ejjudde (oba leeta waya yo ecaajinga).</span>
         </div>
         <div class="check-item">
           <span class="check-badge">✓</span>
-          <span><strong>Ekiseera Ssirini mw'Ezikira:</strong> <span id="check-timeout-desc">Teekawo ssirini eggalirwe oba ezikire oluvannyuma lw'eddakiika 2 oba 5 ssirini esigale ng'eyaka mu kiseera kya kiraasi.</span></span>
+          <span><strong>Ekiseera sikuliini mw'ezikira:</strong> <span id="check-timeout-desc">Teekako ddakiika 2 oba 5 sikuliini esigale ng'eyaka mu kiseera kya kiraasi.</span></span>
         </div>
         <div class="check-item">
           <span class="check-badge">✓</span>
-          <span><strong>Wi-Fi Eyungiddwa:</strong> Yunga ku Wi-Fi y'ekifo osobole okuwanula ebintu eby'okuyiga n'okukekkereza data y'essimu.</span>
+          <span><strong>Wi-Fi Eyungiddwa:</strong> Yunga ku Wi-Fi y'ekifo osobole okuwanula ebintu eby'okuyiga n'okukekkereza data w'okussimu.</span>
         </div>
         <div class="check-item">
           <span class="check-badge">✓</span>
-          <span><strong>Ekifo Ekitaliiko Kintu:</strong> Kakasa nti essimu yo, tabbuleeti, oba kompyuta yo erina waakiri GB 2 ez'ekifo eky'okuterekamu ebiwanulwa.</span>
+          <span><strong>Ekifo Ekitaliiko Kintu:</strong> Kakasa nti essimu, tabbuleeti, oba kompyuta erina ekifo eky’obutakka wansi wa 2 GB okutereka fayiro ez’okuwanula..</span>
         </div>
       </div>
     </section>
@@ -908,10 +908,10 @@ body { overflow-wrap: anywhere; }
 
       <!-- Okwegezaamu Okukulu 1.1 -->
       <div class="exercise-box">
-        <h3 class="exercise-title">Okwegezaamu Okukulu 1.1: Ekyawandiikibwa eky'Olunaku n'Okugaziya Ennukuta</h3>
+        <h3 class="exercise-title">Okwegezaamu 1.1: Ekyawandiikibwa eky'Olunaku n'Okugaziya Ennukuta</h3>
         <ul class="step-list">
-          <li><span class="step-num">1</span> <span class="nav-instruction">Tunuulira olukalala olukulu olw'okutambuliramu (<strong class="nav-location">wansi ku ssirini yo</strong>)</span> olwo onyige <strong>Ekyawandiikibwa eky'Olunaku</strong> (☀️) <em>(Daily Text)</em>.</li>
-          <li><span class="step-num">2</span> Tunuulira olukalala olwa waggulu onyige <strong>akabonero k'Endabika / Obunene bw'Ennukuta</strong> (<strong><code>A A</code></strong>).</li>
+          <li><span class="step-num">1</span> <span class="nav-instruction">Tunuulira olukalala olukulu olw'okutambuliramu (<strong class="nav-location">wansi ku sikuliini yo</strong>)</span> olwo onyige <strong>Ekyawandiikibwa eky'Olunaku</strong> (☀️) <em>(Daily Text)</em>.</li>
+          <li><span class="step-num">2</span> Tunuulira olukalala olwa waggulu onyige <strong>akabonero k'endabika / Obunene bw'ennukuta</strong> (<strong><code>A A</code></strong>).</li>
           <li><span class="step-num">3</span> Sereza akasaaliro ku ddyo ennukuta zifuuke nnene era nnyangu okusoma.</li>
         </ul>
         <div class="step-tip">
@@ -921,7 +921,7 @@ body { overflow-wrap: anywhere; }
 
       <!-- Okwegezaamu Okukulu 1.2 -->
       <div class="exercise-box">
-        <h3 class="exercise-title">Okwegezaamu Okukulu 1.2: Ggulawo Ekitabo n'Essuula ya Bayibuli</h3>
+        <h3 class="exercise-title">Okwegezaamu 1.2: Ggulawo Ekitabo n'essuula ya Bayibuli</h3>
         <ul class="step-list">
           <li><span class="step-num">1</span> Nyiga <strong>Bayibuli</strong> (📖) <em>(Bible)</em> ku lukalala lwo olukulu olw'okutambuliramu.</li>
           <li><span class="step-num">2</span> Nyiga ekitabo kya Bayibuli (okugeza, <em>Matayo</em>).</li>
@@ -931,7 +931,7 @@ body { overflow-wrap: anywhere; }
 
       <!-- Okwegezaamu Okukulu 1.3 -->
       <div class="exercise-box">
-        <h3 class="exercise-title">Okwegezaamu Okukulu 1.3: Kozesa Ekitundu ky'Enkuŋŋaana</h3>
+        <h3 class="exercise-title">Okwegezaamu 1.3: Kozesa Ekitundu ky'Enkuŋŋaana</h3>
         <ul class="step-list">
           <li><span class="step-num">1</span> Nyiga ekitundu ky'<strong>Enkuŋŋaana</strong> (📅) <em>(Meetings)</em> ku lukalala lwo olw'okutambuliramu.</li>
           <li><span class="step-num">2</span> Weetegereze ebitundu ebibiri eby'enkuŋŋaana eza buli wiiki: <em>olukuŋŋaana olwa wakati mu wiiki</em> <em>(Midweek)</em> n'<em>olukuŋŋaana olwa wiikendi</em> <em>(Weekend)</em>.</li>
@@ -941,7 +941,7 @@ body { overflow-wrap: anywhere; }
 
       <!-- Ekirageddwa -->
       <div class="exercise-box demonstrated">
-        <h3 class="exercise-title">Omusomesa Alaga: Bookmark, History, ne Noonya</h3>
+        <h3 class="exercise-title">Okulaga kw’omusomesa engeri gye kikolebwamu: Akaterekero k’omukutu ,<em>Bookmark</em>, Ebyafaayo <em>History</em>,ne Noonya <em>Search</em></h3>
         <p>
           Omusomesa ajja kulaga engeri y'okuteekawo <strong>akabonero akalaga w'okomye okusoma (🔖)</strong> <em>(Bookmark)</em>, okuddayo amangu ku nnyiriri z'obadde osoma ng'onyiga <strong>History (🕒)</strong>, n'okunoonya ebigambo ng'okozesa <strong>Noonya (🔍)</strong> <em>(Search)</em>. Osobola okubyegezaamu ng'oli waka!
         </p>
@@ -956,7 +956,7 @@ body { overflow-wrap: anywhere; }
       </div>
 
       <p class="lesson-intro">
-        Tegeera engeri okusoma awatali Intaneeti gye kukolamu, wanula ebitabo ng'oli ku Wi-Fi okukekkereza data y'essimu yo, era onyumirwe okuwuliriza amaloboozi agasoma mu ddoboozi.
+        Tegeera engeri okusoma awatali yintaneeti gye kukolamu, wanula ebitabo ng'oli ku Wi-Fi okukekkereza data w'essimu yo, era onyumirwe okuwuliriza ebiwandiiko ebisomebwa mu ddoboozi.
       </p>
 
       <a id="video-link-lesson2" class="official-video-link" href="https://www.jw.org/en/online-help/jw-library/android/publications/" target="_blank" rel="noopener">
@@ -965,17 +965,17 @@ body { overflow-wrap: anywhere; }
 
       <!-- Okwegezaamu Okukulu 2.1 -->
       <div class="exercise-box">
-        <h3 class="exercise-title">Okwegezaamu Okukulu 2.1: Okukebera Wi-Fi n'Okukuuma Data y'Essimu</h3>
+        <h3 class="exercise-title">Okwegezaamu 2.1: Okukebera Wi-Fi n'Okukuuma Data w'Essimu</h3>
         <ul class="step-list">
-          <li><span class="step-num">1</span> Tunuulira waggulu ku ssirini yo okakase nti <strong>akabonero ka Wi-Fi</strong> kalaga nti oyungiddwa.</li>
-          <li><span class="step-num">2</span> <em>Lwaki kino kikulu:</em> Okuwanula ng'oli ku Wi-Fi kikakasa nti tosasula ssente za data y'essimu.</li>
-          <li><span class="step-num">3</span> <em>Emirembe Awatali Intaneeti:</em> Ebitabo n'amaloboozi bwe bimala okuwanulwa, bisigala ku ssimu yo, tabbuleeti, oba kompyuta yo ennaku zonna&mdash;teweetaaga Intaneeti wadde akabonero k'essimu mu nkuŋŋaana!</li>
+          <li><span class="step-num">1</span> Tunuulira waggulu ku sikuliini yo okakase nti <strong>akabonero ka Wi-Fi</strong> kalaga nti oyungiddwa.</li>
+          <li><span class="step-num">2</span> <em>Lwaki kino kikulu:</em> Okuwanula ng'oli ku Wi-Fi kikakasa nti tosasulila data w'essimu.</li>
+          <li><span class="step-num">3</span> <em>Emirembe Awatali Yintaneeti:</em> Ebitabo n'amaloboozi bwe bimala okuwanulwa, bisigala ku ssimu yo, tabbuleeti, oba kompyuta yo ennaku zonna&mdash;teweetaaga yintaneeti wadde akabonero k’omukutu gwe ssimu mu nkuŋŋaana!</li>
         </ul>
       </div>
 
       <!-- Okwegezaamu Okukulu 2.2 -->
       <div class="exercise-box">
-        <h3 class="exercise-title">Okwegezaamu Okukulu 2.2: Wanula Ekintu Okukikozesa Awatali Intaneeti</h3>
+        <h3 class="exercise-title">Okwegezaamu Okukulu 2.2: Wanula Ekintu Okukikozesa Awatali yintaneeti</h3>
         <ul class="step-list">
           <li><span class="step-num">1</span> Nyiga <strong>Ebitabo</strong> (📚) <em>(Publications)</em>, oba genda mu kitundu ky'<strong>Enkuŋŋaana</strong> (📅) <em>(Meetings)</em>.</li>
           <li><span class="step-num">2</span> Noonya ekintu ekiriko <strong>akabonero k'Ekire</strong> (☁️) (okugeza, <em>Akatabo k'Enkuŋŋaana</em> ak'omwezi guno oba vidiyo empi).</li>
